@@ -1,5 +1,5 @@
 
-function RandomNum() {
+function RandomNum() { 
   let count = 0;
   let num;
   func = setInterval(function() {
