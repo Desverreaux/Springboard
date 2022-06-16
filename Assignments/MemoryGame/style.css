@@ -1,0 +1,191 @@
+#game div {
+  border: 1px solid black;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 100%; top: 0;}
+  100% {opacity: 0%; top: 0;}
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  color: beige;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Oswald', sans-serif;
+  background-image: url(tb.jpg);
+  background-size: 115% 110%;
+  background-position: center;
+  transition: transform 1s;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flip {
+  transform: rotateY(.5turn);
+}
+
+.card {
+  text-align: center;
+  position: relative;
+  margin: 20px;
+  height:350px;
+  width:250px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+
+}
+
+.front,.back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  display: grid;
+  align-content: center;
+}
+
+.front {
+  background-image: url(cardBackBlack.png);
+  background-size: 115% 110%;
+  background-position: center;
+}
+
+.back {
+  background-color: blue;
+  transform: rotateY(180deg);
+}
+
+.header {
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  display: inline-block;
+}
+
+.score {
+  display: inline-block;
+}
+
+.curtain {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+}
+
+.curtainAnimation {
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.pushable {
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  height:min-content;
+}
+
+.frontButton {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.frontButton:hover {
+  background: hsl(345deg 100% 60%);
+}
+
+.splashText {
+  flex-basis:100%;
+  font-size: 2.55vw;
+  text-align: center;
+
+}
+
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.pink {
+  background-color: pink;
+}
