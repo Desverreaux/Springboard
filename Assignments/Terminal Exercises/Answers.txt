@@ -1,0 +1,11 @@
+1. The man command brings up a manual for each command. After being prompted with the text of a man page you can press the 'enter' key or the up arrow. You can exit the man page with the 'q' button.
+2. the '-l' flag stands for long and gives more info on the objects in the directory such as: permissions, creation date, and size. The '-a' flag stands for all and gives additional entries in the directory results that are normally hidden, such as the ".",".." and hidden files.
+3. By holding ctrl and an arrow key
+4. "Ctrl + e" for the end of the line
+5. "Ctrl + a" for the beginning of the line
+6. "Alt + d"
+7. the shell is the interface which allows a user to interact with a computer, a terminal is the program that allows this be interpreting user input
+8. absolute path is the path to a file starting from root 
+9. relative path is the path to a file from the current context 
+10. a flag is a simple way of enabling certian options in a command, examples include -l for ls, -r for rm, and -t for ping 
+11. -r removes files and directories recursively, i.e a directory and all its sub directories, -f stands for force and skips the confirmation step that normally comes with a rm command  
