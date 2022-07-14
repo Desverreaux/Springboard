@@ -24,7 +24,7 @@ const justWin = [
 ];
 
 
-const COLORS = justWin;
+const COLORS = game;
 
 var score = 0;
 var matches = 0;
@@ -148,9 +148,6 @@ elements.forEach(function(element) {
     var cardElement = event.target.closest('.card');
     if(!cardElement.classList.contains('flip')){
       checkClicked(cardElement);
-    }
-    else {
-
     }
   })
 });

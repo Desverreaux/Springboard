@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+      <form id="memeForm" class="form">
+          <input class="form-field" id="topForm" type="text" placeholder="Top Text">
+          <input class="form-field" id="imageUrl" type="text" placeholder="Image URL">
+          <input class="form-field" id="bottomForm" type="text" placeholder="Bottom Text">
+          <button id="submit"> submit </button>
+      </form>
+
+      <div class="container">
+     
+
+        <div class="meme"> 
+          <div id="backgroundImage" class="meme_img"></div>
+          <div id="topText" class="top text focusedText"> Yes this is the top text</div>
+          <div id="bottomText" class="bottom text focusedText"> noYes this is the top text </div>
+        </div>
+        <form id="save" class="transparent">
+          <button id="saveButton"> save </button>
+        </form>
+      </div>
+      <div id="memeStorageAnchor"></div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
