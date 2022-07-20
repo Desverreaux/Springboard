@@ -1,0 +1,6 @@
+1. git checkout -b "BRANCH NAME" 
+2. fast forward merge simply moves the head of master to that of the new branch, this is possible as there are no new commits on master. 
+   With recursive merge multiple commits have to merged so git adds the commits of branch together before doing a comparison
+3. git checkout "BRANCH NAME"
+4. git branch -D "BRANCH NAME"
+5. when changes to the repo are more complicated than the additions or omission of lines, git asks the user which set of changes should overwrite the other.  
