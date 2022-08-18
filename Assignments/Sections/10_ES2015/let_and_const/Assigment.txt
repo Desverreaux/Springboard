@@ -1,0 +1,14 @@
+const pi = 3.14;
+
+
+What is the difference between var and let?
+---- var is the original js variable declaration keyword, let is added in ES2015. The main difference is the scope var has function scope and let has block scope, as well as you can redeclare a var variable.
+
+What is the difference between var and const?
+---- const cannot be reassigned or redeclared, as well as the noted scope change
+
+What is the difference between let and const?
+---- the only difference is that the value of const, being a constant, can't be reassigned 
+
+What is hoisting?
+---- it is the maner in which javascript will run the declaration of variables before the rest of the code, regardless of where in the code the declaration is made.
