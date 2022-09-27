@@ -1,0 +1,102 @@
+/* game board table */
+
+#Info {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+
+  z-index: 20;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Holtwood One SC';
+}
+
+#Start {
+  position: absolute;
+  top: 50%;
+  left: 40%; 
+  /* transform: translate(-50%); */
+  width: 15%;
+
+  background-color: #ddd;
+  padding: 2%;
+  border: 3px solid black;
+  border-radius: 15px;
+  z-index: 20;
+  text-align: center;
+  font-size: 2em;
+  /* font-family: 'Holtwood One SC'; */
+}
+
+#board {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70vw;
+  height: 60vw;
+  background: rgb(61, 138, 254);
+  border: 1px solid black;
+  border-spacing: 1vw;
+  box-shadow: 5px 5px rgba(0,0,0,.35);
+  padding: 2%;
+  border-radius: 10px; 
+}
+
+/* #pieceDisplay {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70vw;
+  height: 10vw;
+  background: rgb(255, 138, 254);
+  border: 1px solid black;
+  border-spacing: 1vw;
+  border-radius: 10px; 
+} */
+
+.slot {
+  border: solid 3px #666;
+  border-radius: 100%;
+  box-shadow: inset 5px 2px #0005; 
+  background-color: white;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+#board .red {
+  background-color: red; 
+}
+
+#board .yellow {
+  background-color: yellow; 
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+
+/* #column-top td {
+  border: dashed 1px lightgray;
+} */
+
+.redhover:hover {
+  background-color: red;
+}
+
+.yellowhover:hover {
+  background-color: yellow;
+}
+
+/* #Start:hover {
+  background-color: gold;
+} */
+
+#Start:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
