@@ -1,0 +1,44 @@
+DEFINITIONS
+-HTTP- http stands for hyper text transfer protocol and is a globally agreed on system of organizing data for transport over the web, primarily between server and browser applications
+-URL- anagram for uniform resource locators is a method of both attaching an ip to a more human readable form with the help of dns servers, as well as a simple way of passing data to the target server (example: path and query strings)
+-DNS- anagram for domain name system and refers to the dns servers that receive a request in the form of a url, translate that url to a ip, and send the request on next step of the network transmission
+--query string-- query strings are data passed along with the url in a typical http request, this data can be anything that can be represented as a string: login info, specific fields, security tokens, etc 
+
+What are two HTTP verbs and how are they different-- HTTP verbs identify the format of the data being sent to a server and typically give context of what the client expects of the data sent, examples include 
+GET - used for requesting a set of data to be returned, thus "getting" the data 
+POST - used to indicate to the server to save the data sent via the request 
+PATCH - used to update existing data on the server 
+DELETE - used to delete existing data on the server 
+
+What is an HTTP Request-- a request is a set of data set from a client to a server with a HTTP method that indicates the desired actions
+
+What is an HTTP Response-- A response is the set of data returned to the client after a request is made and is composed of a status line, header(s), and a optional body 
+
+What is an HTTP Header-- A header is data sent back to the client in a response and typically includes data such as metadata or simple responses to requests like POST or DELETE. Examples include: 
+  -- time of the request
+  -- client environment (what browser/OS they're using)
+  -- cookies 
+  -- security tokens
+  -- requested language 
+  -- content type 
+  -- host 
+  -- CORS 
+
+What are the processes that happen when you type "http://somesite.com/some/page.html" into a browser -- Several steps are taken 
+-- The browser creates and sends out a GET HTTP request to the network 
+-- the request is received by your router and sent to dns server 
+-- The dns server translates the url to a ip address and sends the request out to the ISP along with the additional data included in the url 
+-- The ISP does a variety of steps that get the request to the webserver indicated in the url 
+-- The webserver receives the request and runs the appropreiate code to build a response 
+-- The reponse is sent out and follows the previous steps to tranverse the network back to the client 
+-- The client receives the response and either builds the webpage or sends in more request for additional data needed to display all the content on the page 
+
+=================PART 2=====================================
+1. using curl, make a GET request to the icanhazdadjoke.com API to find all jokes involving the word “pirate”
+----curl https://icanhazdadjoke.com/search?term=pirate
+2. Use dig to find what the IP address is for icanhazdadjoke.com
+----dig icanhazdadjoke.com +short
+---- 104.21.66.15 or 172.67.198.173 (i have no idea why i get two results)
+3. i did the thing
+
+
